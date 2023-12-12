@@ -1,0 +1,114 @@
+
+.homeContainer{
+    /* background-color: antiquewhite; */
+    width: 100%;
+    height: 100vh;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.child1{
+    /* width: 50%; */
+    /* background-color: aqua; */
+    height: auto;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+
+}
+
+.child1 div h1{
+    font-size: 4rem;
+    /* font-size: 10vh; */
+}
+
+/* #mern{
+    background-color: #663dff;
+    background-image: linear-gradient(319deg, #663dff 0%, #aa00ff 37%, #cc4499 100%);
+    padding: 0.5rem;
+    border-radius: 1rem;
+    color: white;
+} */
+.child1 div h1 span{
+    color: #fff429;
+}
+
+.child1 div button{
+    background-color:#4070f4;
+    margin: 2rem;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 0.5rem;
+    color: white;
+}
+
+.icons_container{
+    display: flex;
+}
+.icons_container div a i{
+    /* background-color: rebeccapurple; */
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 0.5rem;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+    color: #000;
+}
+
+.child2{
+    /* width: 50%; */
+    /* background-color: rgb(64, 0, 255); */
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+.child2 div img{
+    max-width: 100vh;
+    border-radius: 50%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+ 
+
+
+/* smartphones / small screens */
+
+ @media all and (min-width:320px) and (max-width:767px){
+    .homeContainer{
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+        padding: 2rem;
+        height: auto;
+    }
+    .child2 div img{
+        max-width:25rem;
+    }
+ }
+
+
+ /* tablet mid screen */
+
+ @media all and (min-width:768px) and (max-width:1024px){
+    .homeContainer{
+        padding: 2rem;
+        height: auto;
+    }
+    .child2 div img{
+        max-width:25rem;
+    }
+ }
+
+
+ /* desktop large screen */
+
+ @media all and (min-width:1024px){
+    .homeContainer{
+        padding: 2rem;
+        height: auto;
+
+    }
+ }

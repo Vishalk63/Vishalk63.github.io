@@ -1,23 +1,35 @@
-import logo from './logo.svg';
+import { useEffect } from 'react';
 import './App.css';
+import Navbar from './context/Navbar'
+import About from './pages/About';
+import Contact from './pages/Contact';
+import Home from './pages/Home';
+import Projects from './pages/Projects';
+import Skills from './pages/Skills';
+// import AOS from 'aos';
+// import 'aos/dist/aos.css';
 
 function App() {
+
+  //   useEffect(()=>{
+  //   AOS.init({
+  //     offset: 200,
+  //     duration: 600,
+  //     easing: 'ease-in-sine',
+  //     delay: 500,
+  //   })
+  // },[])
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    // < div data-aos="fade-up">
+      <div>
+      <Navbar/>
+      <Home/>
+      <About/>
+      <Skills/>
+      <Projects/>
+      <Contact/>
     </div>
   );
 }
